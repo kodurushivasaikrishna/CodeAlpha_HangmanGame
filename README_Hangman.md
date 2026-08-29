@@ -1,112 +1,71 @@
-# 📈 Stock Portfolio Tracker — CodeAlpha Task 2
-
-A command-line **Stock Portfolio Tracker** built in Python as part of the **CodeAlpha Python Programming Internship**.
-
+🪓 Hangman Game — CodeAlpha Task 1
+A classic text-based Hangman game built entirely in Python as part of the CodeAlpha Python Programming Internship.
 ---
-
-## 📌 About the Project
-
-This tool lets users input their stock holdings and instantly see the total value of their investment portfolio. It uses a built-in dictionary of stock prices and optionally saves the results to a CSV file.
-
+📌 About the Project
+The player must guess a hidden word one letter at a time. Each wrong guess brings the hangman one step closer to completion. The game ends when the player either guesses the full word or runs out of attempts.
 ---
-
-## ✨ Features
-
-- 📋 Displays a list of 8 popular stocks with current (hardcoded) prices
-- ✏️ User inputs stock symbol + number of shares owned
-- 💰 Calculates per-stock value and total portfolio value
-- 💾 Saves results to `portfolio.csv` (optional)
-- ⚠️ Input validation — handles invalid symbols and non-numeric quantities
-- 🔁 Supports multiple stocks in one session
-
+🎮 How to Play
+Run the game in your terminal.
+A word is chosen at random — you'll see blanks representing each letter.
+Type one letter at a time and press Enter.
+You have 6 wrong guesses before the hangman is complete and you lose.
+Guess all the letters correctly to win!
 ---
-
-## 📊 Available Stocks
-
-| Symbol | Company | Price (USD) |
-|--------|---------|-------------|
-| AAPL | Apple Inc. | $180 |
-| TSLA | Tesla Inc. | $250 |
-| GOOGL | Alphabet (Google) | $140 |
-| AMZN | Amazon.com | $185 |
-| MSFT | Microsoft Corp. | $415 |
-| META | Meta Platforms | $510 |
-| NVDA | NVIDIA Corp. | $900 |
-| NFLX | Netflix Inc. | $630 |
-
+✨ Features
+🎲 Random word selection from a built-in word list
+🖼️ ASCII art hangman that updates after each wrong guess
+✅ Tracks correct and incorrect guesses
+⚠️ Validates input — prevents duplicate guesses and non-letter entries
+🔁 Option to replay after each game
 ---
-
-## 🛠️ Concepts Used
-
-| Concept | Usage |
-|---|---|
-| Dictionary | Stores stock names and prices |
-| Input/Output | Interactive user interface |
-| Arithmetic | Calculates investment values |
-| CSV file handling | Saves portfolio to file |
-| Functions | Clean, modular code structure |
-
+🛠️ Concepts Used
+Concept	Usage
+`random` module	Randomly selects a word
+`while` loop	Keeps the game running
+`if-else` statements	Handles correct/incorrect guesses
+Sets & Strings	Tracks guessed letters and word progress
+Functions	Organized, reusable code structure
 ---
-
-## 🚀 How to Run
-
-Make sure Python 3 is installed on your system. No external libraries needed.
-
+🚀 How to Run
+Make sure Python 3 is installed on your system.
 ```bash
 # Clone the repository
-git clone https://github.com/YourUsername/CodeAlpha_StockPortfolioTracker.git
+git clone https://github.com/YourUsername/CodeAlpha_HangmanGame.git
 
 # Navigate to the folder
-cd CodeAlpha_StockPortfolioTracker
+cd CodeAlpha_HangmanGame
 
-# Run the tracker
-python stock_tracker.py
+# Run the game
+python hangman.py
 ```
-
 ---
-
-## 📸 Sample Output
-
+📸 Sample Output
 ```
-=======================================================
-      💹  STOCK PORTFOLIO TRACKER  💹
-=======================================================
+========================================
+   Welcome to HANGMAN!
+========================================
+The word has 6 letters. You have 6 wrong guesses allowed.
 
-📈  Available Stocks:
------------------------------------
-  Symbol   Company              Price (USD)
------------------------------------
-  AAPL     Apple Inc.           $180.00
-  TSLA     Tesla Inc.           $250.00
-  ...
------------------------------------
+       -----
+       |   |
+           |
+           |
+           |
+           |
+    =========
 
-Stock symbol (e.g. AAPL): AAPL
-  How many shares of AAPL do you own? 10
-  ✅  Added 10 share(s) of AAPL.
+Word:  _ _ _ _ _ _
+Guessed letters: None
+Wrong guesses left: 6
 
-=======================================================
-           📊  YOUR STOCK PORTFOLIO SUMMARY
-=======================================================
-  Stock      Qty        Price    Total Value
--------------------------------------------------------
-  AAPL        10      $180.00      $1,800.00
--------------------------------------------------------
-  TOTAL INVESTMENT                 $1,800.00
-=======================================================
+Guess a letter: p
+✅  Nice! 'p' is in the word.
 ```
-
 ---
-
-## 👤 Author
-
-**[Your Name]**
+👤 Author
+K.SHIVA SAI KRISHNA 
 CodeAlpha Python Programming Internship
-
 ---
-
-## 🏢 Internship
-
-This project was built as **Task 2** of the CodeAlpha Python Programming Internship.
-
-🔗 [CodeAlpha Website](https://www.codealpha.tech)
+🏢 Internship
+This project was built as Task 1 of the CodeAlpha Python Programming Internship.
+🔗 CodeAlpha Website
