@@ -70,9 +70,12 @@ Guess a letter: p
 ```
 ---
 👤 Author
-[Your Name]
+K.SHIVA SAI KRISHNA 
+
 CodeAlpha Python Programming Internship
 ---
+
 🏢 Internship
+
 This project was built as Task 1 of the CodeAlpha Python Programming Internship.
 🔗 CodeAlpha Website
